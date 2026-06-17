@@ -1,0 +1,35 @@
+export const EventsSocket = {
+    messageAckUpdated: "messageAckUpdated",
+    newMessage: "newMessage",
+    sessionTerminated: "sessionTerminated",
+    qrExpired: "qrExpired",
+    messageSended: "messageSended",
+    autoCloseCalled: "autoCloseCalled",
+    desconnectedMobile: "desconnectedMobile",
+    qrReadError: "qrReadError",
+    qrReadSuccess: "qrReadSucess",
+    inChat: "inChat",
+    isLogged: "isLogged",
+    generatedQrCode: "generatedQrCode",
+    createdTicket: "createdTicket",
+    newTicket: "newTicket",
+    createdGroup: "createdGroup",
+    updatedTicket: "updatedTicket",
+    archivedTicket: "archivedTicket",
+    closedTicket: "closedTicket",
+    frozedTicket: "frozedTicket",
+    acceptedTicket: "acceptedTicket",
+    reopenedTicket: "reopenedTicket",
+    transferedTicket: "transferedTicket",
+    unarchivedTicket: "unarchivedTicket",
+    unfrozedTicket: "unfrozenTicket",
+    connectedAgent: "connectedAgent",
+    messageBatchAckUpdated: "message.ack.updated",
+    editedMessage: "editedMessage",
+    deletedMessage: "deletedMessage",
+    messageRevoked: "messageRevoked",
+    serviceCreated: "serviceCreated"
+
+} as const;
+
+export type EventsSocket = typeof EventsSocket[keyof typeof EventsSocket];
